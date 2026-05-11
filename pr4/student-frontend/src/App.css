@@ -1,0 +1,176 @@
+/* Загальні стилі */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Форма пошуку (Search / Reset) */
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  background: #eef2f5;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Форма додавання/редагування */
+.student-form {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 40px;
+  background: #fafafa;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.student-form h3 {
+  margin-top: 0;
+  color: #444;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* --- ПІДСВІТКА ПОМИЛОК --- */
+.form-group input.input-error {
+  border: 2px solid #e74c3c;
+  background-color: #fdf2f2;
+}
+
+.form-group input.input-error:focus {
+  box-shadow: 0 0 5px rgba(231, 76, 60, 0.4);
+}
+
+.error-text {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* --- КНОПКИ --- */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.btn-primary { background-color: #007bff; color: white; }
+.btn-primary:hover { background-color: #0056b3; }
+
+.btn-secondary { background-color: #6c757d; color: white; }
+.btn-secondary:hover { background-color: #5a6268; }
+
+.btn-success { background-color: #28a745; color: white; }
+.btn-success:hover { background-color: #218838; }
+
+.btn-warning { background-color: #ffc107; color: black; }
+.btn-warning:hover { background-color: #e0a800; }
+
+.btn-danger { background-color: #dc3545; color: white; }
+.btn-danger:hover { background-color: #c82333; }
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Таблиця */
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: white;
+}
+
+.students-table th, .students-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.students-table th {
+  background-color: #343a40;
+  color: white;
+  font-weight: 600;
+}
+
+.students-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.students-table tr:hover {
+  background-color: #f1f3f5;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
